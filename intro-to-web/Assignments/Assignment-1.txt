@@ -5,7 +5,7 @@ suitable real-world examples.
 4. Identify and list the tools required to set up a web development environment. Explain the
 purpose of each.
 5. Explain what a web server is and give examples of commonly used servers.
-6. Define the roles of a frontend developer, backend developer, and database administrator
+6. Define the roles of a frontend developer, backend developer, and database administrato
 in a project.
 7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a
 screenshot of the setup.
@@ -15,3 +15,125 @@ each.
 them.
 10. Draw a labeled diagram showing the basic web architecture flow — client, server,
 database, and APIs.
+1. Frontend, Backend & Full-Stack
+Frontend: User-visible part of a website. Example: HTML, CSS, JavaScript.
+Backend: Server-side logic and data processing. Example: Java, Python, Node.js.
+Full-Stack: Works on both frontend and backend.
+
+Example: In Amazon, product pages are frontend, order processing is backend, and a developer handling both is full-stack.
+
+2. Client-Server Model
+Client (Browser)
+       ↓ Request
+   Web Server
+       ↓
+    Database
+       ↓
+   Web Server
+       ↓ Response
+Client (Browser)
+
+3. How Browser Displays a Web Page
+User enters URL.
+Browser finds the server.
+Browser sends HTTP/HTTPS request.
+Server processes the request.
+Server sends HTML, CSS, and JavaScript.
+Browser displays the webpage.
+4. Web Development Tools
+VS Code: Writing code.
+Browser: Testing webpages.
+HTML: Creates structure.
+CSS: Designs webpage.
+JavaScript: Adds interactivity.
+Git/GitHub: Version control and code storage.
+Database: Stores data.
+5. Web Server
+
+A web server receives requests from browsers and sends webpages or data back.
+
+Examples: Apache, Nginx, Microsoft IIS, LiteSpeed.
+
+6. Developer Roles
+Frontend Developer: Creates the user interface.
+Backend Developer: Handles server logic, APIs, and data processing.
+Database Administrator: Manages, secures, and maintains databases.
+8. Difference Between Static and Dynamic Websites
+Static Website	Dynamic Website
+Content is fixed	Content can change based on user/request
+Usually uses HTML and CSS	Uses frontend + backend + database
+Faster and simpler	More complex
+Usually does not need a database	Often uses a database
+Suitable for portfolios and simple information pages	Suitable for e-commerce, social media, banking, etc.
+Example of Static Website
+
+A personal portfolio website where the same information is shown to every visitor.
+
+Example of Dynamic Website
+
+Amazon is a dynamic website because products, prices, recommendations, user accounts, and orders are generated and updated dynamically.
+
+In short:
+Static = fixed content
+Dynamic = changing/interacting content
+
+9. Five Web Browsers and Their Rendering Engines
+
+A rendering engine is the part of a browser that converts HTML, CSS, and other web content into the visual webpage displayed on the screen.
+
+Web Browser	Rendering Engine
+Google Chrome	Blink
+Microsoft Edge	Blink
+Mozilla Firefox	Gecko
+Apple Safari	WebKit
+Opera	Blink
+How do rendering engines differ?
+
+Different rendering engines can interpret and display web standards slightly differently.
+
+Blink is used by Chrome, Edge, Opera, and many Chromium-based browsers.
+Gecko is developed by Mozilla and is used by Firefox.
+WebKit is used by Safari, particularly across Apple's platforms.
+
+For example, a website may look slightly different in Firefox compared with Chrome because Gecko and Blink have different implementations of some web standards, CSS features, and browser behavior.
+
+10. Basic Web Architecture Diagram
+                    ┌─────────────────┐
+                    │     CLIENT      │
+                    │  Web Browser    │
+                    └────────┬────────┘
+                             │
+                       HTTP/HTTPS
+                        Request
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │      SERVER     │
+                    │ Backend / Logic │
+                    └────────┬────────┘
+                             │
+                 ┌───────────┴───────────┐
+                 │                       │
+                 │ API Request           │
+                 ▼                       ▼
+          ┌──────────────┐       ┌──────────────┐
+          │     APIs     │       │   DATABASE   │
+          │              │◄─────►│              │
+          └──────┬───────┘       └──────────────┘
+                 │
+                 │ Response/Data
+                 ▼
+          ┌──────────────┐
+          │    SERVER    │
+          └──────┬───────┘
+                 │
+            HTTP Response
+                 │
+                 ▼
+          ┌──────────────┐
+          │    CLIENT    │
+          │ Web Browser  │
+          └──────────────┘
+                 │
+                 ▼
+          Web Page Displayed

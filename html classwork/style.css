@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+    margin: 20px;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.box {
+    width: 60%;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #d98c8c;
+    box-sizing: border-box;
+}
+
+.box h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.box p {
+    font-size: 18px;
+    line-height: 1.4;
+}

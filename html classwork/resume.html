@@ -1,0 +1,472 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aamir Haque - Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #eaeaea;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        .resume {
+            width: 850px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px 50px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #222;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 34px;
+            letter-spacing: 1px;
+        }
+
+        .header h2 {
+            color: #555;
+            font-size: 18px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 25px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #222;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .summary {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        /* Education */
+        .education-item,
+        .project-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h3,
+        .project-item h3 {
+            font-size: 16px;
+        }
+
+        .date {
+            float: right;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .education-item p,
+        .project-item p {
+            font-size: 14px;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .skill-category {
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .project-item ul {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Certifications */
+        .certifications li {
+            margin-left: 20px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Print */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <div class="header">
+
+        <div>
+            <h1>AAMIR HAQUE</h1>
+            <h2>B.Tech CSE | AI & Data Science</h2>
+        </div>
+
+        <div class="contact">
+            <p>India</p>
+            <p>📧 aamirhaque00786@gmail.com</p>
+            <p>📱 +91 7376624586</p>
+            <p>
+                <a href="https://github.com/Aamirhaque7376" target="_blank">
+                    GitHub
+                </a>
+                |
+                <a href="https://www.linkedin.com/in/aamir-haque06/" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- PROFILE -->
+    <div class="section">
+
+        <h2 class="section-title">Profile</h2>
+
+        <p class="summary">
+            B.Tech Computer Science and Engineering student specializing in
+            Artificial Intelligence and Data Science, with a strong interest
+            in Data Science, Machine Learning, Data Engineering and Software
+            Development. Experienced in Python, SQL, Java, Machine Learning,
+            MongoDB, Power BI and data analysis. Interested in building
+            practical, data-driven solutions to real-world problems.
+        </p>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="section">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+
+            <span class="date">2024 – Present</span>
+
+            <h3>B.Tech – Computer Science & Engineering</h3>
+
+            <p>
+                <strong>Specialization:</strong>
+                Artificial Intelligence & Data Science
+            </p>
+
+            <p>
+                GLA University, Mathura
+            </p>
+
+            <p>
+                <strong>CPI:</strong> 7.02
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+            <div>
+                <span class="skill-category">Programming:</span>
+                Python, Java, C
+            </div>
+
+            <div>
+                <span class="skill-category">Data Science:</span>
+                Pandas, NumPy, Matplotlib
+            </div>
+
+            <div>
+                <span class="skill-category">Machine Learning:</span>
+                Scikit-learn, Regression, Classification, KNN, K-Means
+            </div>
+
+            <div>
+                <span class="skill-category">Databases:</span>
+                MySQL, MongoDB, PostgreSQL
+            </div>
+
+            <div>
+                <span class="skill-category">Data Engineering:</span>
+                ETL, ELT, Data Warehousing, SQL
+            </div>
+
+            <div>
+                <span class="skill-category">Visualization:</span>
+                Power BI, Matplotlib
+            </div>
+
+            <div>
+                <span class="skill-category">Web:</span>
+                HTML, CSS, JavaScript, Flask
+            </div>
+
+            <div>
+                <span class="skill-category">Tools:</span>
+                VS Code, Jupyter Notebook, Google Colab, Git
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+
+        <h2 class="section-title">Projects</h2>
+
+
+        <!-- Project 1 -->
+        <div class="project-item">
+
+            <h3>
+                House Price Prediction using Machine Learning
+            </h3>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Pandas, NumPy, Scikit-learn, Flask/Streamlit,
+                MongoDB, MySQL
+            </p>
+
+            <ul>
+                <li>
+                    Developed a machine learning-based system to predict
+                    house prices using property-related features.
+                </li>
+
+                <li>
+                    Performed data preprocessing, exploratory data analysis
+                    and feature engineering.
+                </li>
+
+                <li>
+                    Implemented machine learning models using
+                    Scikit-learn.
+                </li>
+
+                <li>
+                    Integrated database functionality using MongoDB.
+                </li>
+
+                <li>
+                    Built a user-friendly interface for entering property
+                    details and generating predictions.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <!-- Project 2 -->
+        <div class="project-item">
+
+            <h3>
+                Data Analysis & Visualization Dashboard
+            </h3>
+
+            <p>
+                <strong>Technologies:</strong>
+                Python, Pandas, SQL, Power BI, Matplotlib
+            </p>
+
+            <ul>
+
+                <li>
+                    Cleaned and analyzed datasets using Python and Pandas.
+                </li>
+
+                <li>
+                    Created interactive dashboards using Power BI.
+                </li>
+
+                <li>
+                    Used SQL queries to extract and analyze structured data.
+                </li>
+
+                <li>
+                    Generated meaningful insights through data visualization.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Project 3 -->
+        <div class="project-item">
+
+            <h3>
+                Fashion Hub – E-Commerce Website
+            </h3>
+
+            <p>
+                <strong>Technologies:</strong>
+                HTML, CSS, JavaScript
+            </p>
+
+            <ul>
+
+                <li>
+                    Designed a responsive clothing e-commerce website.
+                </li>
+
+                <li>
+                    Created product sections and user-friendly navigation.
+                </li>
+
+                <li>
+                    Implemented a clean and modern web interface.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- DATA SCIENCE -->
+    <div class="section">
+
+        <h2 class="section-title">Data Science Knowledge</h2>
+
+        <ul class="certifications">
+
+            <li>Data Cleaning and Exploratory Data Analysis</li>
+            <li>Statistics and Probability</li>
+            <li>Supervised and Unsupervised Learning</li>
+            <li>Linear Regression and Logistic Regression</li>
+            <li>K-Nearest Neighbors and K-Means</li>
+            <li>Principal Component Analysis (PCA)</li>
+            <li>Model Evaluation – MAE, MSE and R²</li>
+            <li>Feature Engineering and Data Preprocessing</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- DATABASE -->
+    <div class="section">
+
+        <h2 class="section-title">Database & Data Engineering</h2>
+
+        <ul class="certifications">
+
+            <li>SQL and Relational Databases</li>
+            <li>MySQL and PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>ETL and ELT Concepts</li>
+            <li>OLTP and OLAP</li>
+            <li>Data Warehousing</li>
+            <li>Star Schema</li>
+            <li>BigQuery Fundamentals</li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- STRENGTHS -->
+    <div class="section">
+
+        <h2 class="section-title">Strengths</h2>
+
+        <p class="summary">
+            Problem Solving | Analytical Thinking | Quick Learning |
+            Team Collaboration | Data-Driven Decision Making
+        </p>
+
+    </div>
+
+
+    <!-- INTERESTS -->
+    <div class="section">
+
+        <h2 class="section-title">Interests</h2>
+
+        <p class="summary">
+            Data Science | Machine Learning | Data Engineering |
+            Artificial Intelligence | Software Development
+        </p>
+
+    </div>
+
+
+    <div class="footer">
+        © 2026 Aamir Haque
+    </div>
+
+</div>
+
+</body>
+</html>
+```

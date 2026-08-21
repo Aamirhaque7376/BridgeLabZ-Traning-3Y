@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class Timetable</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        /* Header */
+        .timetable th {
+            background: linear-gradient(90deg, #45a9e8, #21c5d2);
+            color: white;
+            height: 85px;
+            border: 1px solid white;
+            vertical-align: middle;
+        }
+
+        .timetable th:first-child {
+            width: 125px;
+        }
+
+        .day {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 15px;
+            margin-top: 6px;
+            font-weight: bold;
+        }
+
+        /* Time column */
+        .time {
+            background-color: #19a8ed;
+            color: white;
+            font-weight: bold;
+            line-height: 24px;
+            width: 125px;
+        }
+
+        /* Normal cells */
+        .timetable td {
+            height: 82px;
+            border: 1px solid #d9d9d9;
+            color: #555;
+            vertical-align: middle;
+            line-height: 24px;
+        }
+
+        /* Friday column */
+        .friday {
+            background-color: #35c47c !important;
+            color: white !important;
+        }
+
+        /* Empty cells */
+        .empty {
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .timetable {
+                font-size: 12px;
+            }
+
+            .timetable th,
+            .timetable td {
+                padding: 5px;
+            }
+
+            .day,
+            .date {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<table class="timetable">
+
+    <!-- Header -->
+    <tr>
+        <th>Time \ Day</th>
+
+        <th>
+            <div class="day">Monday</div>
+            <div class="date">03.08.2026</div>
+        </th>
+
+        <th>
+            <div class="day">Tuesday</div>
+            <div class="date">04.08.2026</div>
+        </th>
+
+        <th>
+            <div class="day">Wednesday</div>
+            <div class="date">05.08.2026</div>
+        </th>
+
+        <th>
+            <div class="day">Thursday</div>
+            <div class="date">06.08.2026</div>
+        </th>
+
+        <th class="friday">
+            <div class="day">Friday</div>
+            <div class="date">07.08.2026</div>
+        </th>
+    </tr>
+
+
+    <!-- 10 AM - 11 AM -->
+    <tr>
+        <td class="time">
+            10:00 AM -<br>
+            11:00 AM
+        </td>
+
+        <td>
+            BCSC 0007<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSC 0011<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="empty">
+            ----
+        </td>
+
+        <td>
+            BCSC 0011<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="friday">
+            BCSE 0281<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 11 AM - 12 PM -->
+    <tr>
+        <td class="time">
+            11:00 AM -<br>
+            12:00 PM
+        </td>
+
+        <td>
+            BCSC 0011<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            PCPH 0002<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            PQRH 0001<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="empty">
+            ----
+        </td>
+
+        <td class="friday">
+            BCSE 0281<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 12 PM - 1 PM -->
+    <tr>
+        <td class="time">
+            12:00 PM -<br>
+            01:00 PM
+        </td>
+
+        <td>
+            BCSE 1008<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            PCPH 0002<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSE 1008<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            PGDH 0001<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="friday">
+            BCSC 0007<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 2 PM - 3 PM -->
+    <tr>
+        <td class="time">
+            02:00 PM -<br>
+            03:00 PM
+        </td>
+
+        <td>
+            BCSE 0281<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            PQRH 0001<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSE 1251<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSE 1251<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="friday">
+            PCPH 0002<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 3 PM - 4 PM -->
+    <tr>
+        <td class="time">
+            03:00 PM -<br>
+            04:00 PM
+        </td>
+
+        <td>
+            BCSE 0281<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSC 0011<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSE 1251<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td>
+            BCSE 1251<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="friday">
+            PCPH 0002<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 4 PM - 5 PM -->
+    <tr>
+        <td class="time">
+            04:00 PM -<br>
+            05:00 PM
+        </td>
+
+        <td>
+            BCSC 0806<br>
+            AB - II<br>
+            Room - 5002
+        </td>
+
+        <td>
+            BCSE 0807<br>
+            AB - V<br>
+            Room - B212A
+        </td>
+
+        <td>
+            BCSC 0007<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+
+        <td class="empty">
+            ----
+        </td>
+
+        <td class="friday">
+            PVRH 0001<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+
+    <!-- 5 PM - 6 PM -->
+    <tr>
+        <td class="time">
+            05:00 PM -<br>
+            06:00 PM
+        </td>
+
+        <td>
+            BCSC 0806<br>
+            AB - II<br>
+            Room - 5002
+        </td>
+
+        <td>
+            BCSE 0807<br>
+            AB - V<br>
+            Room - B212A
+        </td>
+
+        <td class="empty">
+            ----
+        </td>
+
+        <td class="empty">
+            ----
+        </td>
+
+        <td class="friday">
+            BCSE 1008<br>
+            AB - VII<br>
+            Room - 205
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

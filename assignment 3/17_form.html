@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Form Page</title></head>
+<body>
+    <h1>Simple Form</h1>
+    <!-- The target loads result.html inside the iframe -->
+    <form action="result.html" method="get" target="resultFrame">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <!-- Result page will appear inside this iframe -->
+    <iframe name="resultFrame" width="500" height="200" title="Form Result"></iframe>
+</body>
+</html>

@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; color: #fff; background: #111827; }
+header { padding: 3rem 8%; text-align: center; background: #1e3a8a; }
+header h1 { font-size: 3rem; font-weight: 800; }
+nav { position: sticky; top: 0; z-index: 5; padding: 1rem; text-align: center; background: #111827; }
+nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+section {
+    min-height: 70vh;
+    padding: 8rem 10%;
+    border-bottom: 5px solid #fff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* parallax-like effect */
+}
+section h2 { font-size: 2.5rem; font-weight: 800; }
+section p { max-width: 700px; font-size: 1.2rem; line-height: 1.8; }
+.history {
+    background-image: linear-gradient(135deg, rgba(30,58,138,.9), rgba(14,116,144,.7)),
+                      url("https://images.unsplash.com/photo-1548013146-72479768bada?w=1400");
+}
+.culture {
+    background-image: radial-gradient(circle, rgba(190,24,93,.85), rgba(88,28,135,.9)),
+                      url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1400");
+}
+.places {
+    background-color: #0f766e;
+    background-image: url("https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1400");
+}
+footer { padding: 2rem; text-align: center; background: #020617; }

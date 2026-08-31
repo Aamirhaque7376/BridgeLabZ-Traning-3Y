@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #e2e8f0; color: #0f172a; }
+main { width: 90%; max-width: 1100px; margin: auto; padding: 60px 0; text-align: center; }
+main > h1 { font-size: 2.7rem; }
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; align-items: stretch; }
+.plan {
+    min-height: 430px;
+    padding: 35px 25px;
+    border: 2px solid #cbd5e1;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(15,23,42,.12);
+    display: flex;
+    flex-direction: column;
+    transition: transform .3s ease, background-color .3s ease;
+}
+.plan:hover { transform: scale(1.05); background-color: #eff6ff; }
+.popular { border: 3px solid #2563eb; position: relative; }
+.badge { margin: -35px -25px 20px; padding: 8px; background: #2563eb; color: white; font-weight: bold; border-radius: 14px 14px 0 0; }
+.price { font-size: 2.5rem; font-weight: bold; }
+.price span { font-size: 1rem; font-weight: normal; }
+.plan ul { text-align: left; line-height: 2.2; flex: 1; }
+.plan a { display: block; padding: 12px; border-radius: 8px; background: #2563eb; color: white; text-decoration: none; font-weight: bold; }
+@media (max-width: 700px) {
+    .plans { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #172033; background: #f8fafc; }
+.site-header {
+    position: sticky; top: 0; z-index: 20;
+    padding: 15px 6%; background: rgba(15,23,42,.95); color: white;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.site-header h1 { margin: 0; }
+nav { display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; }
+.hero {
+    position: relative; min-height: 85vh;
+    display: grid; place-items: center; text-align: center;
+    background: linear-gradient(rgba(15,23,42,.65), rgba(30,64,175,.55)),
+                url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600") center/cover fixed;
+}
+.hero::before {
+    content: ""; position: absolute; inset: 30px;
+    border: 2px solid rgba(255,255,255,.65); outline: 4px solid rgba(255,255,255,.15);
+}
+.hero-text { position: relative; color: white; padding: 30px; }
+.hero h2 { font-size: clamp(2.5rem, 7vw, 5rem); margin: 0; }
+.about {
+    display: flex; align-items: center; gap: 50px;
+    padding: 90px 8%; background: #fff;
+}
+.about > div, .about img { flex: 1; }
+.about img { width: 100%; border: 6px solid #e2e8f0; border-radius: 15px; }
+.services { position: relative; padding: 90px 8%; background: #e0f2fe; }
+.services > h2, .contact > h2 { text-align: center; font-size: 2.5rem; }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
+.service-grid article {
+    padding: 30px; background: rgba(255,255,255,.8);
+    border: 2px solid #7dd3fc; border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.1);
+}
+.contact { padding: 90px 8%; background: linear-gradient(135deg, #eef2ff, #fdf2f8); }
+form { max-width: 650px; margin: auto; display: grid; gap: 15px; }
+input, textarea { padding: 14px; border: 2px solid #cbd5e1; border-radius: 8px; font: inherit; }
+input:focus, textarea:focus { outline: 3px solid rgba(37,99,235,.2); border-color: #2563eb; }
+button { padding: 14px; border: 0; border-radius: 8px; background: #2563eb; color: white; font-weight: bold; }
+.top-button {
+    position: fixed; right: 20px; bottom: 20px; z-index: 30;
+    width: 45px; height: 45px; display: grid; place-items: center;
+    border-radius: 50%; background: #2563eb; color: white; text-decoration: none;
+}
+footer { padding: 25px; text-align: center; background: #0f172a; color: white; }
+@media (max-width: 700px) {
+    .site-header { flex-direction: column; gap: 10px; }
+    .about { flex-direction: column; }
+    .service-grid { grid-template-columns: 1fr; }
+}

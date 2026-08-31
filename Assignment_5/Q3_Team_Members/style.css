@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #1e293b; }
+.team-section { width: 90%; max-width: 1100px; margin: 0 auto; padding: 60px 0; text-align: center; }
+.team-section > h1 { font-size: 2.8rem; }
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+.card {
+    padding: 30px;
+    margin: 5px;
+    border: 2px solid #cbd5e1;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(15,23,42,.12);
+}
+.card.lead { background: #dbeafe; border: 3px dashed #2563eb; }
+.avatar {
+    width: 80px; height: 80px; margin: 0 auto 20px;
+    border-radius: 50%; background: #2563eb; color: white;
+    display: grid; place-items: center; font-weight: bold; font-size: 1.3rem;
+}
+.card h2 { margin: 10px 0; }
+.card h3 { color: #2563eb; }
+.card p { line-height: 1.6; }
+
+@media (max-width: 600px) {
+    .team { grid-template-columns: 1fr; }
+}

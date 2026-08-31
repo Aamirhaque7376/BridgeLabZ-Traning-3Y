@@ -1,0 +1,77 @@
+/* Flexbox keeps the footer at the bottom when content is short. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #172554;
+}
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 70px;
+    padding: 1rem 5%;
+    background: #172554;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.header h1 { margin: 0; font-size: 1.6rem; }
+nav { display: flex; gap: 2em; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #93c5fd; }
+
+main { flex: 1; padding-top: 70px; }
+.hero {
+    min-height: 75vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+}
+.hero > div { width: 50%; }
+.hero h2 { font-size: 3rem; margin: 0.3em 0; }
+.hero p { font-size: 1.15rem; line-height: 1.7; }
+.tagline { color: #2563eb; font-weight: bold; }
+.hero img {
+    width: 30%;
+    min-width: 180px;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+}
+.about, .contact {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 12px;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #172554;
+    color: white;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .header { flex-direction: column; gap: .5rem; }
+    main { padding-top: 105px; }
+    .hero { flex-direction: column-reverse; text-align: center; padding: 4vh 0; }
+    .hero > div { width: 100%; }
+    .hero h2 { font-size: 2rem; }
+    .hero img { width: 45%; }
+}

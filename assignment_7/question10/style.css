@@ -1,0 +1,14 @@
+/* Question 10: responsive navbar and transitions */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; background: #f8fafc; color: #172033; }
+header { background: #172033; padding: 15px; }
+nav { display: flex; justify-content: center; gap: 10px; }
+nav a { color: white; text-decoration: none; padding: 12px 22px; border: 1px solid #64748b; border-radius: 7px; transition: all 0.3s ease; }
+nav a:hover { background: #2563eb; transform: translateY(-2px); }
+nav a.active { background: #7c3aed; border-color: #7c3aed; }
+main { flex: 1; display: grid; place-items: center; text-align: center; padding: 40px; }
+footer { text-align: center; padding: 18px; background: #e2e8f0; }
+@media (max-width: 700px) {
+    nav { flex-direction: column; align-items: stretch; }
+    nav a { text-align: center; }
+}

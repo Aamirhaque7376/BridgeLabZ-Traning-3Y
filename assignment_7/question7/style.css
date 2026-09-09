@@ -1,0 +1,14 @@
+/* Question 7: typography, pseudo-elements and text styling */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8fafc; color: #1e293b; font-family: Arial, sans-serif; }
+.article { max-width: 850px; margin: auto; padding: 60px 25px; }
+h1 { font-size: 2.7rem; text-align: center; font-weight: 800; letter-spacing: 2px; }
+p { font-size: 1.1rem; line-height: 1.8; letter-spacing: .3px; text-align: justify; }
+.intro { font-size: 1.3rem; font-weight: 600; }
+mark { background: #fde68a; color: #92400e; padding: 2px 5px; }
+strong { color: #1d4ed8; }
+em { color: #7c3aed; }
+article p::first-letter { font-size: 2rem; font-weight: bold; }
+article p::first-line { letter-spacing: .6px; }
+.serif { font-family: Georgia, serif; }
+.mono { font-family: "Courier New", monospace; }

@@ -1,0 +1,25 @@
+/* Question 5: advanced selectors demonstration */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #172033; }
+.container { max-width: 850px; margin: auto; padding: 40px; }
+/* Attribute selector: selects inputs whose type is text. */
+input[type="text"] { width: 100%; padding: 14px; border: 2px solid #94a3b8; border-radius: 8px; }
+/* Attribute selector: href beginning with https. */
+a[href^="https"] { color: #15803d; font-weight: bold; }
+/* Pseudo-class: hover changes link appearance. */
+a:hover { text-decoration: underline; }
+/* Pseudo-class: focus styles focused text input. */
+input:focus { outline: 3px solid #93c5fd; }
+/* Pseudo-class: nth-child selects every second list item. */
+li:nth-child(even) { background: #dbeafe; }
+/* Child combinator > selects direct children of ul. */
+ul > li { padding: 10px; }
+/* Adjacent sibling + selects the first paragraph directly after ul. */
+ul + p { font-weight: bold; }
+/* General sibling ~ selects all paragraphs following ul. */
+ul ~ p { border-left: 4px solid #2563eb; padding-left: 10px; }
+/* Descendant combinator selects any h2 inside section. */
+section h2 { color: #7c3aed; }
+/* Pseudo-elements add decorative content before and after headings. */
+h2::before { content: "◆ "; }
+h2::after { content: " ◆"; }

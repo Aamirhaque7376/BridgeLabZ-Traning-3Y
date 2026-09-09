@@ -1,0 +1,11 @@
+/* Question 6: transform functions with hover transitions */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; }
+header { text-align: center; padding: 30px; background: #172033; color: white; }
+.transform-grid { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 45px; flex-wrap: wrap; text-align: center; }
+.transform-grid section { width: 150px; }
+.box { height: 110px; display: flex; align-items: center; justify-content: center; border-radius: 15px; color: white; background: #2563eb; transition: all 0.4s ease; }
+.rotate:hover { transform: rotate(20deg); }
+.scale:hover { transform: scale(1.25); }
+.translate:hover { transform: translate(25px, -15px); }
+.skew:hover { transform: skew(15deg, 8deg); }

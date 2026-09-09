@@ -1,0 +1,11 @@
+/* Question 4: box-shadow, text-shadow and transitions */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; }
+header { text-align: center; padding: 35px; background: #172033; color: white; }
+h1, h2 { text-shadow: 2px 2px 3px #94a3b8; }
+.cards { min-height: 70vh; display: flex; justify-content: center; align-items: center; gap: 30px; padding: 40px; }
+.card { width: 280px; min-height: 200px; padding: 30px; background: white; border-radius: 18px; transition: all .3s ease; }
+.card:hover { transform: translateY(-15px); box-shadow: 0 22px 40px rgba(15,23,42,.25); }
+.soft { box-shadow: 0 8px 25px rgba(15,23,42,.12); }
+.hard { box-shadow: 8px 8px 0 #cbd5e1; }
+.layered { box-shadow: 4px 4px 0 #cbd5e1, 10px 10px 25px rgba(15,23,42,.18); }

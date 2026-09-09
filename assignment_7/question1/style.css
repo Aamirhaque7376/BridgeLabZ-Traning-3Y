@@ -1,0 +1,13 @@
+/* Question 1: borders, padding, Flexbox and transitions */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #172033; }
+header, footer { text-align: center; padding: 20px; background: #172033; color: white; }
+.boxes { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 50px; }
+.box { width: 180px; min-height: 130px; display: flex; align-items: center; justify-content: center; text-align: center; background: white; transition: border-color .3s ease, transform .3s ease; }
+.box:hover { border-color: #e63946; transform: translateY(-6px); }
+.solid { border: 5px solid #2563eb; }
+.dashed { border: 5px dashed #16a34a; }
+.double { border: 8px double #9333ea; }
+.groove { border: 8px groove #f59e0b; }
+.rounded { border: 5px solid #0891b2; border-radius: 30px; padding: 30px; }
+.padding-demo { border: 5px solid #334155; padding: 45px 20px 10px; }

@@ -1,0 +1,8 @@
+/* Question 2: sizing units and overflow */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eef2ff; }
+.layout { min-height: 100vh; display: flex; align-items: center; justify-content: center; gap: 25px; padding: 30px; flex-wrap: wrap; }
+.size-box { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px; border-radius: 16px; color: white; }
+.box1 { width: 200px; height: 180px; background: #2563eb; }
+.box2 { width: 70%; min-height: 30vh; max-width: 650px; background: #16a34a; }
+.box3 { width: 20em; min-height: 160px; max-width: 320px; max-height: 220px; overflow: auto; background: #9333ea; }

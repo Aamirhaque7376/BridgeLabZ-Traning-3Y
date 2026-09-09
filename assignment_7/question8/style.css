@@ -1,0 +1,14 @@
+/* Question 8: visual box-model layers */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #172033; }
+main { text-align: center; padding: 40px 20px; }
+.model { display: flex; justify-content: center; margin: 40px auto; }
+.margin-layer { background: #fef3c7; padding: 35px; }
+.border-layer { background: #fca5a5; border: 12px solid #b91c1c; }
+.padding-layer { background: #bbf7d0; padding: 30px; }
+.content { width: 180px; height: 100px; display: flex; align-items: center; justify-content: center; background: #bfdbfe; font-weight: bold; }
+.description { max-width: 650px; margin: auto; text-align: left; }
+.comparison { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 35px; }
+.default-box, .border-box { width: 250px; height: 150px; padding: 30px; border: 10px solid #334155; background: #e2e8f0; }
+.default-box { box-sizing: content-box; }
+.border-box { box-sizing: border-box; }

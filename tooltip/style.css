@@ -1,0 +1,36 @@
+.btn{
+    margin: 100px 100px;
+    position: relative;
+
+}
+.btn::after{
+    position: absolute;
+    content: "This is button";
+    width: 120px;
+    height: 25px;
+    background-color:black;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    bottom: 25px;
+    left: -20px;
+    opacity: 0;
+
+}
+.btn::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 20px;
+    width: 25px;
+    transform: rotate(45deg);
+    bottom: 27px;
+    left:30px;
+    opacity: 0;
+}
+.btn:hover::after{
+    opacity: 1;
+}
+.btn:hover::before{
+    opacity: 1;
+}

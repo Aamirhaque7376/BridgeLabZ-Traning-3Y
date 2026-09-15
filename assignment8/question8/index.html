@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Sizing Comparison</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Box-Sizing Comparison</h1></header>
+<main>
+<section class="comparison">
+<article class="box default-box"><h2>Default: content-box</h2><div class="measure">Width: 300px<br>Padding: 30px<br>Border: 5px</div><p>Total width = 300 + 60 + 10 = <strong>370px</strong></p></article>
+<article class="box border-box"><h2>border-box</h2><div class="measure">Width: 300px<br>Padding: 30px<br>Border: 5px</div><p>Total width stays <strong>300px</strong>; padding and border are included.</p></article>
+</section>
+</main>
+<footer><p>Understanding CSS box-sizing</p></footer>
+</body>
+</html>

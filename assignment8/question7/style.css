@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: linear-gradient(135deg, #dbeafe, #f5d0fe); color: #1e293b; display: flex; flex-direction: column; }
+header, footer { text-align: center; padding: 20px; background: #312e81; color: white; }
+main { flex: 1; display: flex; justify-content: center; align-items: center; padding: 30px; }
+.card { width: min(560px, 100%); display: flex; flex-direction: column; gap: 12px; padding: 35px; background: #ffffffee; border-radius: 18px; box-shadow: 0 15px 40px #0002; }
+.search-form { display: flex; gap: 10px; }
+input, select { width: 100%; padding: 13px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
+input:focus, select:focus { outline: 3px solid #c4b5fd; border-color: #7c3aed; }
+button { padding: 13px 20px; border: 0; border-radius: 8px; background: #4f46e5; color: white; cursor: pointer; transition: .2s; }
+button:hover { background: #3730a3; transform: translateY(-2px); }
+button:active { transform: scale(.97); }
+.actions { display: flex; gap: 12px; margin-top: 10px; }
+.secondary { background: #059669; }
+.secondary:hover { background: #047857; }
+@media (max-width: 600px) { .search-form, .actions { flex-direction: column; } }

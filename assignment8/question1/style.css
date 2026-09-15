@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #1f2937; }
+header, footer { text-align: center; padding: 20px; background: #172554; color: white; }
+main { padding: 40px 5%; }
+.examples { display: flex; gap: 20px; justify-content: center; align-items: stretch; flex-wrap: nowrap; }
+.example { flex: 1; padding: 24px; background: white; border-radius: 12px; box-shadow: 0 5px 18px #0002; text-align: center; }
+.example h2 { margin-top: 0; }
+a { display: inline-block; color: #2563eb; padding: 10px; border-radius: 6px; }
+a:hover { background: #2563eb; color: white; }
+button { padding: 10px 18px; border: 0; border-radius: 6px; background: #16a34a; color: white; cursor: pointer; }
+button:focus { outline: 3px solid #f59e0b; outline-offset: 3px; }
+.active-demo:active { transform: scale(.92); background: #dc2626; }
+.number-list { list-style: none; padding: 0; }
+.number-list li { padding: 8px; margin: 5px; background: #e5e7eb; border-radius: 5px; }
+.number-list li:nth-child(odd) { background: #bfdbfe; color: #1e3a8a; font-weight: bold; }
+@media (max-width: 700px) { .examples { flex-direction: column; } }

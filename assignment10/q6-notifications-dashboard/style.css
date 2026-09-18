@@ -1,0 +1,8 @@
+/* Minor spacing polish for the notifications dashboard */
+.alert {
+  border-left: 5px solid;
+}
+
+.alert-success { border-left-color: #198754; }
+.alert-info { border-left-color: #0dcaf0; }
+.alert-danger { border-left-color: #dc3545; }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimbus Cloud | Company Landing Page</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Full-width header with navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Nimbus Cloud</a>
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero-section text-white text-center d-flex align-items-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Scale Your Business with Nimbus Cloud</h1>
+        <p class="lead">Reliable cloud infrastructure, built for startups that move fast.</p>
+        <a href="#features" class="btn btn-warning btn-lg mt-3">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Feature grid using container, row, col -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Why Choose Us</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="p-4 text-center border rounded h-100">
+              <h3>⚡ Fast</h3>
+              <p>Deploy your apps in seconds with our global edge network.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-4 text-center border rounded h-100">
+              <h3>🔒 Secure</h3>
+              <p>Enterprise-grade security baked into every layer.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="p-4 text-center border rounded h-100">
+              <h3>💰 Affordable</h3>
+              <p>Transparent pricing that scales with your growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4" id="contact">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 Nimbus Cloud Inc. | contact@nimbuscloud.com</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (needed for navbar toggler) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

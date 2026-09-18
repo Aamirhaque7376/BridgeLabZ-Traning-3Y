@@ -1,0 +1,4 @@
+/* Slight hover feedback on task rows */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}

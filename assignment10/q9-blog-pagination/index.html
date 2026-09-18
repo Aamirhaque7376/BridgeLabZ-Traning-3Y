@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Posts | Pagination</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="bg-secondary text-white text-center py-4">
+    <h1 class="fw-bold">Latest Blog Posts</h1>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4 mb-5">
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Understanding Flexbox in 10 Minutes</h5>
+            <p class="card-text">A quick primer on how flexbox solves everyday layout problems.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">5 Bootstrap Utilities You're Not Using</h5>
+            <p class="card-text">Small utility classes that can save you dozens of lines of CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination component -->
+    <nav aria-label="Blog page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Simple pager -->
+    <div class="d-flex justify-content-between container mt-4">
+      <a href="#" class="btn btn-outline-secondary">&laquo; Older Posts</a>
+      <a href="#" class="btn btn-outline-secondary">Newer Posts &raquo;</a>
+    </div>
+  </main>
+
+  <footer class="bg-secondary text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 The Weekly Post</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Piazza | Today's Menu</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="bg-danger text-white text-center py-4">
+    <h1 class="fw-bold">La Piazza Ristorante</h1>
+    <p class="lead mb-0">Authentic Italian Cuisine</p>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="text-center lead fw-bold mb-4">Today's Menu</h2>
+
+    <div class="row g-5">
+      <!-- Menu table -->
+      <div class="col-12 col-lg-7">
+        <table class="table table-striped table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Item</th>
+              <th>Category</th>
+              <th class="text-end">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Margherita Pizza</td>
+              <td>Main Course</td>
+              <td class="text-end">$12.50</td>
+            </tr>
+            <tr>
+              <td>Fettuccine Alfredo</td>
+              <td>Main Course</td>
+              <td class="text-end">$14.00</td>
+            </tr>
+            <tr>
+              <td>Bruschetta</td>
+              <td>Starter</td>
+              <td class="text-end">$7.00</td>
+            </tr>
+            <tr>
+              <td>Tiramisu</td>
+              <td>Dessert</td>
+              <td class="text-end">$6.50</td>
+            </tr>
+            <tr>
+              <td>Espresso</td>
+              <td>Beverage</td>
+              <td class="text-end">$3.00</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Featured image with caption -->
+        <figure class="text-center mt-4">
+          <img src="https://placehold.co/500x300/f8d7da/842029?text=Chef%27s+Pizza" class="img-fluid rounded" alt="Chef's special pizza">
+          <figcaption class="text-muted mt-2">Our signature wood-fired Margherita Pizza</figcaption>
+        </figure>
+      </div>
+
+      <!-- Chef's specials list group -->
+      <div class="col-12 col-lg-5">
+        <h3 class="text-center mb-3">Chef's Specials</h3>
+        <ul class="list-group shadow-sm">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Truffle Risotto
+            <span class="badge bg-success rounded-pill">New</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Seafood Linguine
+            <span class="badge bg-warning text-dark rounded-pill">Popular</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Osso Buco
+            <span class="badge bg-danger rounded-pill">Limited</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 La Piazza Ristorante</p>
+  </footer>
+
+</body>
+</html>

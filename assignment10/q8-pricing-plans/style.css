@@ -1,0 +1,17 @@
+/* Hover transitions for pricing cards */
+.pricing-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Pro plan is slightly larger to stand out even before hover */
+.scale-up {
+  transform: scale(1.03);
+}
+
+.scale-up:hover {
+  transform: scale(1.03) translateY(-8px);
+}

@@ -1,0 +1,5 @@
+/* Minor spacing for the pager buttons */
+.container.mt-4 a {
+  min-width: 140px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+/* Minor visual polish for the menu page */
+body {
+  font-family: 'Georgia', serif;
+}
+
+figcaption {
+  font-style: italic;
+}

@@ -1,0 +1,11 @@
+/* Custom tweaks for the portfolio page */
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}

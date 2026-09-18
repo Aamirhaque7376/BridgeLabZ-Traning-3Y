@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Notifications</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+  <header class="bg-dark text-white py-3 mb-4">
+    <div class="container">
+      <h1 class="h4 mb-0">Admin Dashboard</h1>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="h5 mb-4">Notifications</h2>
+
+        <!-- Success alert -->
+        <div class="alert alert-success" role="alert">
+          <strong>New message!</strong> You have received a reply from a customer.
+        </div>
+
+        <!-- Info alert -->
+        <div class="alert alert-info" role="alert">
+          <strong>Tip:</strong> You can export your reports as CSV from the settings page.
+        </div>
+
+        <!-- Dismissible danger alert -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Warning!</strong> Your storage is almost full. Consider upgrading your plan.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Summary "well" -->
+        <div class="bg-light border rounded p-4 mt-4">
+          <h3 class="h6 fw-bold">Summary</h3>
+          <p class="mb-0">You have 1 unread message, 1 helpful tip, and 1 warning that needs attention.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Admin Dashboard</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

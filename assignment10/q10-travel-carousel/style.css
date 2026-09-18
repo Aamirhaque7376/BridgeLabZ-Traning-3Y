@@ -1,0 +1,9 @@
+/* Slight rounding and caption polish for the carousel */
+.carousel {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carousel-caption h5 {
+  font-weight: 700;
+}

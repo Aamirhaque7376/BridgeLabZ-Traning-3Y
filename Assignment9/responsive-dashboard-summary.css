@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30px;
+    background: #0f172a;
+    color: white;
+}
+
+.header p {
+    opacity: 0.9;
+}
+
+.sidebar {
+    padding: 30px 20px;
+    background: #1e293b;
+    color: white;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.sidebar a:hover {
+    background: #334155;
+}
+
+.content {
+    padding: 35px;
+}
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.summary-card {
+    padding: 28px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    animation: loadIn 0.7s ease both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:nth-child(2) { animation-delay: 0.1s; }
+.summary-card:nth-child(3) { animation-delay: 0.2s; }
+.summary-card:nth-child(4) { animation-delay: 0.3s; }
+
+.summary-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
+.summary-card h2 {
+    margin-bottom: 12px;
+}
+
+.summary-card p {
+    margin-bottom: 18px;
+}
+
+code {
+    display: block;
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+@keyframes loadIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+    }
+
+    .header {
+        grid-column: auto;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .sidebar {
+        order: 1;
+        padding: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        order: 2;
+        padding: 25px 15px;
+    }
+
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+}

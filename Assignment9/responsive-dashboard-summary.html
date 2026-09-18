@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Summary</title>
+    <link rel="stylesheet" href="responsive-dashboard-summary.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>CSS Dashboard</h1>
+            <p>Responsive Design Summary</p>
+        </header>
+
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav aria-label="Dashboard navigation">
+                <a href="#filters">Filters</a>
+                <a href="#typography">Typography</a>
+                <a href="#media">Media Queries</a>
+                <a href="#cheat">Cheat Sheet</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="summary-cards" aria-label="Responsive CSS concepts">
+                <article id="filters" class="summary-card">
+                    <h2>Filters</h2>
+                    <p>Use CSS filter functions to change image appearance.</p>
+                    <code>filter: grayscale(100%);</code>
+                </article>
+
+                <article id="typography" class="summary-card">
+                    <h2>Typography</h2>
+                    <p>Use relative units and clamp() for fluid text.</p>
+                    <code>font-size: clamp(1rem, 2vw, 1.5rem);</code>
+                </article>
+
+                <article id="media" class="summary-card">
+                    <h2>Media Queries</h2>
+                    <p>Apply styles based on screen width and other conditions.</p>
+                    <code>@media (max-width: 750px)</code>
+                </article>
+
+                <article id="cheat" class="summary-card">
+                    <h2>Cheat Sheet Links</h2>
+                    <p>Keep useful Grid, Flexbox, filter, and typography rules together.</p>
+                    <code>display: grid;</code>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

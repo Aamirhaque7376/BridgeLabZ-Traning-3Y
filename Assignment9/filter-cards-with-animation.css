@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: #111827;
+    color: white;
+}
+
+.profiles {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 55px 6%;
+}
+
+.profile-card {
+    flex: 1;
+    max-width: 330px;
+    overflow: hidden;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+    animation: fadeIn 1s ease both;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.profile-card:nth-child(2) {
+    animation-delay: 0.15s;
+}
+
+.profile-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 25px rgba(0, 0, 0, 0.18);
+}
+
+.profile-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+}
+
+.gray {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+.profile-card div {
+    padding: 22px;
+}
+
+.profile-card h2 {
+    margin-bottom: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: min(100%, 400px);
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Principles Summary</title>
+    <link rel="stylesheet" href="responsive-design-principles-summary.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Design Principles</h1>
+    </header>
+
+    <main>
+        <section class="principles" aria-label="Responsive design principles">
+            <article class="principle">
+                <h2>Fluid Layouts</h2>
+                <p>Layouts use flexible widths so content can adapt to available space.</p>
+                <pre><code>width: 100%;
+max-width: 1200px;</code></pre>
+            </article>
+
+            <article class="principle">
+                <h2>Flexible Media</h2>
+                <p>Images and videos should shrink within their containers.</p>
+                <pre><code>img {
+    max-width: 100%;
+    height: auto;
+}</code></pre>
+            </article>
+
+            <article class="principle">
+                <h2>Breakpoints</h2>
+                <p>Media queries apply different rules at useful screen sizes.</p>
+                <pre><code>@media (max-width: 600px) {
+    ...
+}</code></pre>
+            </article>
+        </section>
+    </main>
+
+    <footer><p>Assignment 9 &mdash; Q9</p></footer>
+</body>
+</html>

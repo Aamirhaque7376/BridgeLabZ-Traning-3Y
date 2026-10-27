@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q8 DynamicObjectUpdater</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q8 DynamicObjectUpdater</h1>
+    <p>Task 8: Edit the user object and display its updated values using the DOM.</p>
+    <form id="userForm">
+  <label for="userName">Name</label><input id="userName" value="John" required>
+  <label for="userEmail">Email</label><input id="userEmail" type="email" value="john@mail.com" required>
+  <label for="userAge">Age</label><input id="userAge" type="number" min="1" max="120" value="21" required>
+  <button type="submit">Update user</button>
+</form>
+<h2>Current user object</h2><div id="userOutput" class="output"></div>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q8_DynamicObjectUpdater.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q7 LoginValidation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q7 LoginValidation</h1>
+    <p>Task 7: Validate username and password with regular expressions and show specific errors.</p>
+    <form id="loginForm" novalidate>
+  <label for="loginUsername">Username</label><input id="loginUsername" autocomplete="username">
+  <div id="loginUsernameError" class="error"></div>
+  <label for="loginPassword">Password</label><input id="loginPassword" type="password" autocomplete="current-password">
+  <div id="loginPasswordError" class="error"></div>
+  <button type="submit">Validate login</button>
+</form>
+<div id="loginResult" class="output" aria-live="polite"></div>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q7_LoginValidation.js"></script>
+</body>
+</html>

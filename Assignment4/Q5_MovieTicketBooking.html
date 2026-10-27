@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q5 MovieTicketBooking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q5 MovieTicketBooking</h1>
+    <p>Task 5: Validate booking details and display a ticket.</p>
+    <form id="bookingForm" novalidate>
+  <label for="bookingName">Name</label><input id="bookingName">
+  <div id="bookingNameError" class="error"></div>
+  <label for="bookingEmail">Email</label><input id="bookingEmail" type="email">
+  <div id="bookingEmailError" class="error"></div>
+  <label for="bookingSeats">Seats (1–10)</label><input id="bookingSeats" type="number" min="1" max="10" step="1">
+  <div id="bookingSeatsError" class="error"></div>
+  <button type="submit">Book ticket</button>
+</form>
+<div id="ticketOutput" class="output" aria-live="polite"></div>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q5_MovieTicketBooking.js"></script>
+</body>
+</html>

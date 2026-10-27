@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q2 StudentFormValidator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q2 StudentFormValidator</h1>
+    <p>Task 2: Validate a student registration form using regular expressions.</p>
+    <form id="studentForm" novalidate>
+  <label for="studentName">Name</label><input id="studentName" autocomplete="name">
+  <div id="studentNameError" class="error"></div>
+  <label for="studentEmail">Email</label><input id="studentEmail" type="email" autocomplete="email">
+  <div id="studentEmailError" class="error"></div>
+  <label for="studentPhone">Phone (10 digits)</label><input id="studentPhone" inputmode="numeric" maxlength="10">
+  <div id="studentPhoneError" class="error"></div>
+  <label for="studentPassword">Password</label><input id="studentPassword" type="password" autocomplete="new-password">
+  <div id="studentPasswordError" class="error"></div>
+  <button type="submit">Register</button>
+  <div id="studentResult" class="output" aria-live="polite"></div>
+</form>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q2_StudentFormValidator.js"></script>
+</body>
+</html>

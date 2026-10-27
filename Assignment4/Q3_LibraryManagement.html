@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 LibraryManagement</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q3 LibraryManagement</h1>
+    <p>Task 3: Issue and return books by ISBN.</p>
+    <h2>Available books</h2><div id="booksOutput" class="output"></div>
+<form id="issueForm">
+  <label for="isbnInput">ISBN to issue</label><input id="isbnInput" required placeholder="e.g. 978-0131103627">
+  <button type="submit">Issue book</button>
+</form>
+<button id="returnButton" class="secondary">Return last issued book</button>
+<div id="libraryMessage" class="output" aria-live="polite"></div>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q3_LibraryManagement.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 ShoppingCart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Q9 ShoppingCart</h1>
+    <p>Task 9: Add cart items, calculate the total, and apply a valid SAVE20 or DISC10 coupon.</p>
+    <form id="cartItemForm">
+  <h2>Add item</h2>
+  <label for="itemName">Item name</label><input id="itemName" required>
+  <label for="itemPrice">Price (₹)</label><input id="itemPrice" type="number" min="0.01" step="0.01" required>
+  <label for="itemQuantity">Quantity</label><input id="itemQuantity" type="number" min="1" step="1" value="1" required>
+  <button type="submit">Add to cart</button>
+</form>
+<div id="cartItemsOutput" class="output">Your cart is empty.</div>
+<p><strong>Subtotal: </strong><span id="cartSubtotal">₹0.00</span></p>
+<form id="couponForm">
+  <label for="couponCode">Coupon code (SAVE20 or DISC10)</label><input id="couponCode" placeholder="SAVE20">
+  <button type="submit">Apply coupon</button>
+</form>
+<div id="couponMessage" aria-live="polite"></div>
+<div id="cartFinalTotal" class="output">Final total: ₹0.00</div>
+    <p class="small"><a href="README.md">Assignment 4 instructions</a></p>
+  </main>
+  <script src="Q9_ShoppingCart.js"></script>
+</body>
+</html>

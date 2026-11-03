@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Live Character Counter</h1>
+        <label for="message">Your message (maximum 100 characters)</label>
+        <textarea id="message" maxlength="100" placeholder="Start typing..."></textarea>
+        <div class="counter-row">
+            <span id="counter" aria-live="polite">100 characters remaining</span>
+            <button id="reset-button" type="button">Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product List Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Product List Manager</h1>
+        <form id="product-form">
+            <label for="product-input">Product name</label>
+            <div class="input-row">
+                <input id="product-input" type="text" placeholder="Enter a product" autocomplete="off">
+                <button type="submit">Add Product</button>
+            </div>
+        </form>
+        <ul id="product-list" aria-label="Products">
+            <li class="empty-message">No products added yet.</li>
+        </ul>
+        <p class="hint">Use Edit to change a product. Clicking outside an edited item saves it.</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

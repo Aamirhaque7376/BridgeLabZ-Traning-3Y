@@ -1,0 +1,6 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 28px 16px; font-family: Arial, sans-serif; background: #f8fafc; color: #1e293b; }
+.container { width: min(100%, 560px); margin: auto; }
+#tracking-box { width: 400px; height: 400px; max-width: 100%; border: 2px solid #334155; border-radius: 8px; background: white; position: relative; overflow: hidden; cursor: crosshair; }
+#coordinates { font-family: monospace; font-size: 16px; font-weight: 700; }
+.red-dot { width: 12px; height: 12px; position: absolute; border-radius: 50%; background: red; transform: translate(-50%, -50%); pointer-events: none; }

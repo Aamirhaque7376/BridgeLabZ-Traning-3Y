@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Registration Form</h1>
+        <p id="step-indicator">Step 1 of 3</p>
+        <form id="registration-form" novalidate>
+            <section class="form-step active" data-step="0">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+                <small class="error" id="name-error"></small>
+            </section>
+            <section class="form-step" data-step="1" hidden>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <small class="error" id="email-error"></small>
+            </section>
+            <section class="form-step" data-step="2" hidden>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="new-password" required minlength="6">
+                <small class="error" id="password-error"></small>
+            </section>
+            <div class="buttons">
+                <button id="back-button" type="button" disabled>Back</button>
+                <button id="next-button" type="button">Next</button>
+            </div>
+        </form>
+        <section id="summary" hidden>
+            <h2>Registration Summary</h2>
+            <p id="summary-name"></p>
+            <p id="summary-email"></p>
+            <p>Password: <span>Hidden for privacy</span></p>
+            <button id="restart-button" type="button">Start Again</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

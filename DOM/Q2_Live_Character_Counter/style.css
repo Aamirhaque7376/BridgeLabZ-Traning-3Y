@@ -1,0 +1,9 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 20px; background: #eef2ff; font-family: Arial, sans-serif; color: #1e293b; }
+.card { width: min(100%, 600px); background: white; padding: 28px; border-radius: 14px; box-shadow: 0 8px 28px #1e293b18; }
+textarea { width: 100%; min-height: 180px; resize: vertical; padding: 14px; margin-top: 10px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+.counter-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px; }
+#counter { color: #15803d; font-weight: 700; }
+#counter.warning { color: #ca8a04; }
+#counter.danger { color: #dc2626; }
+button { border: 0; border-radius: 7px; padding: 10px 18px; background: #2563eb; color: white; cursor: pointer; }
